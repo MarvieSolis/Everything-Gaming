@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './CreatePost.css';
+import Navbar from "../../components/Navbar/Navbar";
 
 import Blog from "../../components/CreatePost/Blog/Blog";
 import Review from "../../components/CreatePost/Review/Review";
@@ -33,18 +34,21 @@ class CreatePost extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div>
+        <Navbar />
 
         <div className="container createPost">
           <div className="row justify-content-center">
-            <h1>Create a Post</h1>
+            <h1 id="createPostHeader">Create a Post</h1>
           </div>
           <div className="row justify-content-center">
-            <div className="col-auto">
-              <h6>What type of post will you be making?</h6>
-              <button className="categorySelect" onClick={this.renderWalkthrough}>Walkthrough</button>
-              <button className="categorySelect" onClick={this.renderReview}>Review</button>
-              <button className="categorySelect" onClick={this.renderBlog}>Blog</button>
+            <div className="cols-m-auto">
+              <h6 id="createPostIns">What type of post will you be making?</h6>
+              <div className="createPostBtnWrapper">
+                <button className="categorySelect" onClick={this.renderWalkthrough}>Walkthrough</button>
+                <button className="categorySelect ctgsl" onClick={this.renderReview}>Review</button>
+                <button className="categorySelect" onClick={this.renderBlog}>Blog</button>
+              </div>
             </div>
           </div>
         </div>

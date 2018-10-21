@@ -1,0 +1,50 @@
+#createPostHeader {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+#createPostIns {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.createPostBtnWrapper {
+    background-color: #323232;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.categorySelect {
+    background-color: #323232;
+    color: white;
+    border: none;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    transition: all 1s;
+}
+
+.categorySelect:focus {
+    color: red;
+}
+
+.ctgsl {
+    border-right: 1px solid #666;
+    border-left: 1px solid #666;
+}
+
+.submitBtn {
+    background-color: red;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+}

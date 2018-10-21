@@ -43,9 +43,9 @@ class Review extends Component {
                                 <label htmlFor="game">Platform</label>
                                 <input type="platform" onChange={this.handleInput} className="form-control" id="postPlatform" placeholder="What are you playing on?" />
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label htmlFor="score">Score (out of 5)</label>
-                                <select class="form-control" id="gameScore" onChange={this.handleInput}>
+                                <select className="form-control" id="gameScore" onChange={this.handleInput}>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -57,7 +57,7 @@ class Review extends Component {
                                 <label htmlFor="game">Content</label>
                                 <ReactQuill value={this.state.text} onChange={this.handleChange} />
                             </div>
-                            <button type="submit" className="btn btn-primary">Create Post</button>
+                            <button type="submit" className="btn submitBtn">Create Post</button>
                         </form>
 
                     </div>

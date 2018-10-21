@@ -47,7 +47,7 @@ class Walkthrough extends Component {
                                 <label htmlFor="game">Content</label>
                                 <ReactQuill value={this.state.text} onChange={this.handleChange} />
                             </div>
-                            <button type="submit" className="btn btn-primary">Create Post</button>
+                            <button type="submit" className="btn submitBtn">Create Post</button>
                         </form>
 
                     </div>
